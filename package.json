@@ -1,7 +1,7 @@
 {
   "name": "@educandu/educandu-plugin-example",
-  "version": "0.0.0",
-  "description": "An example plugin for educandu",
+  "version": "1.0.1",
+  "description": "A piano plugin for educandu",
   "type": "module",
   "exports": {
     ".": "./dist/index.js",
@@ -11,25 +11,28 @@
     "node": "^18.0.0"
   },
   "keywords": [
-    "educandu"
+    "educandu",
+    "piano"
   ],
   "license": "MIT",
-  "author": "Educandu Team <team@educandu.dev>",
-  "homepage": "https://github.com/educandu/educandu-plugin-example",
+  "author": "Educandu Team <team@educandu.dev>, Benedikt Wagner <benewagner-npm@gmx.de>",
+  "homepage": "https://github.com/benewagner/educandu-plugin-piano",
   "repository": {
     "type": "git",
-    "url": "https://github.com/educandu/educandu-plugin-example"
+    "url": "https://github.com/benewagner/educandu-plugin-piano"
   },
   "dependencies": {
     "@ant-design/icons": "^4.8.0",
     "antd": "^5.1.6",
     "joi": "^17.7.0",
+    "midi-player-js": "^2.0.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-i18next": "^12.1.1"
+    "react-i18next": "^12.1.1",
+    "tone": "^14.7.77"
   },
   "devDependencies": {
-    "@educandu/dev-tools": "^8.0.2",
+    "@educandu/dev-tools": "^8.0.1",
     "@educandu/educandu": ">=0.104.0",
     "@educandu/eslint-config": "^2.2.1",
     "@educandu/node-jsx-loader": "^3.0.4",

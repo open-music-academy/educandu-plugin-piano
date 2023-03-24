@@ -1,8 +1,8 @@
-import ExampleInfo from '../../src/index.js';
+import PianoInfo from '../../src/index.js';
 
 export default {
   resolveCustomPageTemplate: null,
   resolveCustomHomePageTemplate: null,
   resolveCustomSiteLogo: null,
-  resolveCustomPluginInfos: () => [ExampleInfo]
+  resolveCustomPluginInfos: () => [PianoInfo]
 };

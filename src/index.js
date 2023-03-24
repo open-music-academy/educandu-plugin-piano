@@ -1,1 +1,1 @@
-export { default } from './example-info.js';
+export { default } from './piano-info.js';
