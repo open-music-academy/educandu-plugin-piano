@@ -1,3 +1,7 @@
+1.0.3
+
+- add correct README.md
+
 1.0.2
 
 - add withCredentials flag to httpClient in display component to allow loading of midi files from private storage
