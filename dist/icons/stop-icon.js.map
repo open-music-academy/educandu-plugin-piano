@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/icons/stop-icon.js"],
+  "sourcesContent": ["import React from 'react';\r\nimport iconNs from '@ant-design/icons';\r\n\r\nconst Icon = iconNs.default || iconNs;\r\n\r\nexport function StopIconComponent() {\r\n  return (\r\n    <svg width=\"1em\" height=\"1em\" style={{ enableBackground: 'new 0 0 1000 1000' }} viewBox=\"0 0 1000 1000\" >\r\n      <path d=\"M787.58 847.75H212.42c-33.23 0-60.17-26.94-60.17-60.17V212.42c0-33.23 26.94-60.17 60.17-60.17h575.16c33.23 0 60.17 26.94 60.17 60.17v575.16c0 33.23-26.94 60.17-60.17 60.17z\" style={{ fill: 'currentColor' }} />\r\n    </svg>\r\n  );\r\n}\r\n\r\nfunction StopIcon() {\r\n  return (\r\n    <Icon component={StopIconComponent} />\r\n  );\r\n}\r\n\r\nexport default StopIcon;\r\n"],
+  "mappings": "AAAA,OAAO,WAAW;AAClB,OAAO,YAAY;AAEnB,MAAM,OAAO,OAAO,WAAW;AAExB,SAAS,oBAAoB;AAClC,SACE,oCAAC,SAAI,OAAM,OAAM,QAAO,OAAM,OAAO,EAAE,kBAAkB,oBAAoB,GAAG,SAAQ,mBACtF,oCAAC,UAAK,GAAE,gLAA+K,OAAO,EAAE,MAAM,eAAe,GAAG,CAC1N;AAEJ;AAEA,SAAS,WAAW;AAClB,SACE,oCAAC,QAAK,WAAW,mBAAmB;AAExC;AAEA,IAAO,oBAAQ;",
+  "names": []
+}

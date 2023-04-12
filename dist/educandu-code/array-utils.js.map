@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/educandu-code/array-utils.js"],
+  "sourcesContent": ["export function swapItemsAt(items, index1, index2) {\r\n  const lastIndex = items.length - 1;\r\n  if (index1 < 0 || index2 < 0 || index1 > lastIndex || index2 > lastIndex || index1 === index2) {\r\n    return items;\r\n  }\r\n\r\n  const result = items.slice();\r\n\r\n  const item1 = result[index1];\r\n  const item2 = result[index2];\r\n  result[index1] = item2;\r\n  result[index2] = item1;\r\n  return result;\r\n}\r\n\r\nexport function removeItemAt(items, index) {\r\n  const lastIndex = items.length - 1;\r\n  if (index < 0 || index > lastIndex) {\r\n    return items;\r\n  }\r\n\r\n  return items.filter((t, i) => i !== index);\r\n}\r\n"],
+  "mappings": "AAAO,SAAS,YAAY,OAAO,QAAQ,QAAQ;AACjD,QAAM,YAAY,MAAM,SAAS;AACjC,MAAI,SAAS,KAAK,SAAS,KAAK,SAAS,aAAa,SAAS,aAAa,WAAW,QAAQ;AAC7F,WAAO;AAAA,EACT;AAEA,QAAM,SAAS,MAAM,MAAM;AAE3B,QAAM,QAAQ,OAAO,MAAM;AAC3B,QAAM,QAAQ,OAAO,MAAM;AAC3B,SAAO,MAAM,IAAI;AACjB,SAAO,MAAM,IAAI;AACjB,SAAO;AACT;AAEO,SAAS,aAAa,OAAO,OAAO;AACzC,QAAM,YAAY,MAAM,SAAS;AACjC,MAAI,QAAQ,KAAK,QAAQ,WAAW;AAClC,WAAO;AAAA,EACT;AAEA,SAAO,MAAM,OAAO,CAAC,GAAG,MAAM,MAAM,KAAK;AAC3C;",
+  "names": []
+}

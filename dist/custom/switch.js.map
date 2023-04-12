@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/custom/switch.js"],
+  "sourcesContent": ["import PropTypes from 'prop-types';\r\nimport React, { useRef } from 'react';\r\n\r\nexport default function Switch({ handleSwitchClick, pianoId, isNoteInputEnabled }) {\r\n\r\n  const inputSwitch = useRef(null);\r\n\r\n  const onClick = () => {\r\n    inputSwitch.current.classList.toggle('Piano-switchChecked');\r\n    const isChecked = inputSwitch.current.classList.contains('Piano-switchChecked');\r\n    handleSwitchClick(isChecked);\r\n  };\r\n\r\n  return (\r\n    <div ref={inputSwitch} className={`${pianoId} Piano-switch ${isNoteInputEnabled.current && 'Piano-switchChecked'}`} onClick={onClick} >\r\n      <div className=\"Piano-switchHandle\" />\r\n    </div>\r\n  );\r\n}\r\n\r\nSwitch.propTypes = {\r\n  handleSwitchClick: PropTypes.func.isRequired,\r\n  isNoteInputEnabled: PropTypes.object,\r\n  pianoId: PropTypes.string\r\n};\r\n\r\nSwitch.defaultProps = {\r\n  isNoteInputEnabled: { current: false },\r\n  pianoId: ''\r\n};\r\n"],
+  "mappings": "AAAA,OAAO,eAAe;AACtB,OAAO,SAAS,cAAc;AAEf,SAAR,OAAwB,EAAE,mBAAmB,SAAS,mBAAmB,GAAG;AAEjF,QAAM,cAAc,OAAO,IAAI;AAE/B,QAAM,UAAU,MAAM;AACpB,gBAAY,QAAQ,UAAU,OAAO,qBAAqB;AAC1D,UAAM,YAAY,YAAY,QAAQ,UAAU,SAAS,qBAAqB;AAC9E,sBAAkB,SAAS;AAAA,EAC7B;AAEA,SACE,oCAAC,SAAI,KAAK,aAAa,WAAW,GAAG,wBAAwB,mBAAmB,WAAW,yBAAyB,WAClH,oCAAC,SAAI,WAAU,sBAAqB,CACtC;AAEJ;AAEA,OAAO,YAAY;AAAA,EACjB,mBAAmB,UAAU,KAAK;AAAA,EAClC,oBAAoB,UAAU;AAAA,EAC9B,SAAS,UAAU;AACrB;AAEA,OAAO,eAAe;AAAA,EACpB,oBAAoB,EAAE,SAAS,MAAM;AAAA,EACrC,SAAS;AACX;",
+  "names": []
+}
