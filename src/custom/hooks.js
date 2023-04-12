@@ -40,7 +40,7 @@ export function useMidiDevice() {
 }
 
 // Load the midi file defined in midi-piano-editor.js
-export function useMidiData(src) {
+export function useMidiData(src, clientConfig, sourceUrl, isInternalSourceType) {
   const [midiData, setMidiData] = useState(null);
 
   useEffect(() => {
@@ -48,11 +48,11 @@ export function useMidiData(src) {
       return;
     }
     const httpClient = new HttpClient();
-    httpClient.get(src, { responseType: 'arraybuffer', withCredentials: true })
+    httpClient.get(src, { responseType: 'arraybuffer', withCredentials: isInternalSourceType({ url: sourceUrl, cdnRootUrl: clientConfig.cdnRootUrl }) })
       .then(response => {
         setMidiData(response.data);
       });
-  }, [src, midiData]);
+  }, [src, midiData, sourceUrl, clientConfig.cdnRootUrl, isInternalSourceType]);
 
   return midiData;
 }

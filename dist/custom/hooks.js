@@ -30,17 +30,17 @@ function useMidiDevice() {
   }, [isMidiDeviceConnected]);
   return isMidiDeviceConnected;
 }
-function useMidiData(src) {
+function useMidiData(src, clientConfig, sourceUrl, isInternalSourceType) {
   const [midiData, setMidiData] = useState(null);
   useEffect(() => {
     if (!src || midiData) {
       return;
     }
     const httpClient = new HttpClient();
-    httpClient.get(src, { responseType: "arraybuffer", withCredentials: true }).then((response) => {
+    httpClient.get(src, { responseType: "arraybuffer", withCredentials: isInternalSourceType({ url: sourceUrl, cdnRootUrl: clientConfig.cdnRootUrl }) }).then((response) => {
       setMidiData(response.data);
     });
-  }, [src, midiData]);
+  }, [src, midiData, sourceUrl, clientConfig.cdnRootUrl, isInternalSourceType]);
   return midiData;
 }
 function useMidiPlayer(midiData) {

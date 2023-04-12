@@ -11,9 +11,9 @@ import AbcNotation from "./educandu-code/abc-notation.js";
 import React, { useEffect, useRef, useState } from "react";
 import CardSelector from "./educandu-code/card-selector.js";
 import ClientConfig from "@educandu/educandu/bootstrap/client-config.js";
-import { getAccessibleUrl } from "@educandu/educandu/utils/source-utils.js";
 import { useService } from "@educandu/educandu/components/container-context.js";
 import { sectionDisplayProps } from "@educandu/educandu/ui/default-prop-types.js";
+import { getAccessibleUrl, isInternalSourceType } from "@educandu/educandu/utils/source-utils.js";
 import { useMidiData, usePianoId, useToneJsSampler, useMidiDevice, useExercise, useMidiPlayer } from "./custom/hooks.js";
 import PauseIcon from "./educandu-code/pause-icon.js";
 function PianoDisplay({ content }) {
@@ -34,9 +34,9 @@ function PianoDisplay({ content }) {
   const [playExerciseStartIndex, setPlayExerciseStartIndex] = useState(0);
   const { sourceUrl, midiTrackTitle, colors, tests, sampleType } = content;
   const src = getAccessibleUrl({ url: sourceUrl, cdnRootUrl: clientConfig.cdnRootUrl });
-  const midiData = useMidiData(src);
   const pianoId = usePianoId("default");
   const isMidiDeviceConnected = useMidiDevice();
+  const midiData = useMidiData(src, clientConfig, sourceUrl, isInternalSourceType);
   const [midiPlayer, midiPlayerHandler] = useMidiPlayer(midiData);
   const [sampler, hasSamplerLoaded] = useToneJsSampler(sampleType);
   const exerciseData = useExercise(content, currentTestIndex, currentExerciseIndex);
