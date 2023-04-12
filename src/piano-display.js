@@ -1,19 +1,3 @@
-// import React from 'react';
-// import { sectionDisplayProps } from '@educandu/educandu/ui/default-prop-types.js';
-
-// export default function ServerTimeDisplay({ content }) {
-
-//   return (
-//     <div className="EP_Educandu_Example_Display">
-//       Hi
-//     </div>
-//   );
-// }
-
-// ServerTimeDisplay.propTypes = {
-//   ...sectionDisplayProps
-// };
-
 import Piano from './custom/piano.js';
 import * as ut from './custom/utils.js';
 import * as C from './custom/constants.js';

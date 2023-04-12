@@ -1,3 +1,7 @@
+1.0.2
+
+- add withCredentials flag to httpClient in display component to allow loading of midi files from private storage
+
 1.0.1
 
 - update dependency @educandu/educandu

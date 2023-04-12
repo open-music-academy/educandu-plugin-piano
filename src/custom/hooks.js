@@ -48,7 +48,7 @@ export function useMidiData(src) {
       return;
     }
     const httpClient = new HttpClient();
-    httpClient.get(src, { responseType: 'arraybuffer' })
+    httpClient.get(src, { responseType: 'arraybuffer', withCredentials: true })
       .then(response => {
         setMidiData(response.data);
       });
