@@ -1,3 +1,7 @@
+1.0.4
+
+- update dist folder
+
 1.0.3
 
 - add correct README.md

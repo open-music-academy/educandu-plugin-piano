@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/educandu-code/unique-id.js"],
+  "sourcesContent": ["import { customAlphabet } from 'nanoid';\r\n\r\nconst DEFAULT_ID_LENGTH = 22;\r\nconst alphabet = '123456789abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ';\r\n\r\nconst defaultGenerator = customAlphabet(alphabet, DEFAULT_ID_LENGTH);\r\n\r\nfunction create(length = DEFAULT_ID_LENGTH) {\r\n  return length === DEFAULT_ID_LENGTH\r\n    ? defaultGenerator()\r\n    : customAlphabet(alphabet, length)();\r\n}\r\n\r\nexport default {\r\n  create\r\n};\r\n"],
+  "mappings": "AAAA,SAAS,sBAAsB;AAE/B,MAAM,oBAAoB;AAC1B,MAAM,WAAW;AAEjB,MAAM,mBAAmB,eAAe,UAAU,iBAAiB;AAEnE,SAAS,OAAO,SAAS,mBAAmB;AAC1C,SAAO,WAAW,oBACd,iBAAiB,IACjB,eAAe,UAAU,MAAM,EAAE;AACvC;AAEA,IAAO,oBAAQ;AAAA,EACb;AACF;",
+  "names": []
+}
