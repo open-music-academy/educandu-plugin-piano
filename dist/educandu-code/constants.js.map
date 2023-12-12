@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../src/educandu-code/constants.js"],
-  "sourcesContent": ["export const CDN_URL_PREFIX = 'cdn://';\r\n\r\nexport const MEDIA_LIBRRY_STORAGE_PATH_PATTERN = /^media-library(\\/.*)?$/;\r\nexport const DOCUMENT_MEDIA_STORAGE_PATH_PATTERN = /^document-media(\\/.*)?$/;\r\nexport const ROOM_MEDIA_STORAGE_PATH_PATTERN = /^room-media\\/([^/]+)(\\/.*)?$/;\r\n"],
-  "mappings": "AAAO,MAAM,iBAAiB;AAEvB,MAAM,oCAAoC;AAC1C,MAAM,sCAAsC;AAC5C,MAAM,kCAAkC;",
-  "names": []
-}
