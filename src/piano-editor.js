@@ -487,7 +487,7 @@ export default function PianoEditor({ content, onContentChanged }) {
           {t('all')}
         </Checkbox>
       </FormItem>
-      <FormItem label={t('triads')} {...FORM_ITEM_LAYOUT}>
+      <FormItem label={t('chords')} {...FORM_ITEM_LAYOUT}>
         <div>
           {Object.keys(TRIADS).map(triad => (
             <Checkbox

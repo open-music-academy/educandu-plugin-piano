@@ -1,3 +1,7 @@
+1.0.5
+
+- fix translations
+
 1.0.4
 
 - update dist folder
