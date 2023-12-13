@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../src/icons/backspace-icon.js"],
-  "sourcesContent": ["import React from 'react';\r\nimport iconNs from '@ant-design/icons';\r\n\r\nconst Icon = iconNs.default || iconNs;\r\n\r\nexport function BackspaceIconComponent() {\r\n  return (\r\n    <svg width=\"1em\" height=\"1em\" style={{ enableBackground: 'new 0 0 1000 1000' }} viewBox=\"0 0 1000 1000\" >\r\n      <path d=\"M911.9 862.53H367.73a43.56 43.56 0 0 1-32.76-14.86L55.34 528.37c-14.39-16.43-14.38-40.99.03-57.41L334.98 152.3a43.569 43.569 0 0 1 32.73-14.83H911.9c24.05 0 43.55 19.5 43.55 43.55v637.97c-.01 24.04-19.5 43.54-43.55 43.54zm-475.17-518.4 305.28 305.28m0-305.28L436.73 649.41\" style={{ fill: '#f2f2f2', stroke: '#666', strokeWidth: 54.6161, strokeLinecap: 'round', strokeLinejoin: 'round', strokeMiterlimit: 10 }} />\r\n    </svg>\r\n  );\r\n}\r\n\r\nfunction BackspaceIcon() {\r\n  return (\r\n    <Icon component={BackspaceIconComponent} />\r\n  );\r\n}\r\n\r\nexport default BackspaceIcon;\r\n"],
-  "mappings": "AAAA,OAAO,WAAW;AAClB,OAAO,YAAY;AAEnB,MAAM,OAAO,OAAO,WAAW;AAExB,SAAS,yBAAyB;AACvC,SACE,oCAAC,SAAI,OAAM,OAAM,QAAO,OAAM,OAAO,EAAE,kBAAkB,oBAAoB,GAAG,SAAQ,mBACtF,oCAAC,UAAK,GAAE,oRAAmR,OAAO,EAAE,MAAM,WAAW,QAAQ,QAAQ,aAAa,SAAS,eAAe,SAAS,gBAAgB,SAAS,kBAAkB,GAAG,GAAG,CACta;AAEJ;AAEA,SAAS,gBAAgB;AACvB,SACE,oCAAC,QAAK,WAAW,wBAAwB;AAE7C;AAEA,IAAO,yBAAQ;",
-  "names": []
-}

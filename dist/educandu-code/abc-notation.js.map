@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../src/educandu-code/abc-notation.js"],
-  "sourcesContent": ["import abcjs from 'abcjs';\r\nimport PropTypes from 'prop-types';\r\nimport React, { useEffect, useRef } from 'react';\r\n\r\nconst abcOptions = {\r\n  paddingtop: 0,\r\n  // Sometimes ABC renders outside on the bottom, so we add some extra space\r\n  paddingbottom: 10,\r\n  paddingright: 0,\r\n  paddingleft: 0,\r\n  responsive: 'resize'\r\n};\r\n\r\nfunction AbcNotation({ abcCode }) {\r\n  const abcContainerRef = useRef();\r\n\r\n  useEffect(() => {\r\n    abcjs.renderAbc(abcContainerRef.current, abcCode, abcOptions);\r\n  }, [abcContainerRef, abcCode]);\r\n\r\n  return (\r\n    <div className=\"AbcNotation\">\r\n      <div className=\"AbcNotation-notes\" ref={abcContainerRef} />\r\n    </div>\r\n  );\r\n}\r\n\r\nAbcNotation.propTypes = {\r\n  abcCode: PropTypes.string\r\n};\r\n\r\nAbcNotation.defaultProps = {\r\n  abcCode: ''\r\n};\r\n\r\nexport default AbcNotation;\r\n"],
-  "mappings": "AAAA,OAAO,WAAW;AAClB,OAAO,eAAe;AACtB,OAAO,SAAS,WAAW,cAAc;AAEzC,MAAM,aAAa;AAAA,EACjB,YAAY;AAAA;AAAA,EAEZ,eAAe;AAAA,EACf,cAAc;AAAA,EACd,aAAa;AAAA,EACb,YAAY;AACd;AAEA,SAAS,YAAY,EAAE,QAAQ,GAAG;AAChC,QAAM,kBAAkB,OAAO;AAE/B,YAAU,MAAM;AACd,UAAM,UAAU,gBAAgB,SAAS,SAAS,UAAU;AAAA,EAC9D,GAAG,CAAC,iBAAiB,OAAO,CAAC;AAE7B,SACE,oCAAC,SAAI,WAAU,iBACb,oCAAC,SAAI,WAAU,qBAAoB,KAAK,iBAAiB,CAC3D;AAEJ;AAEA,YAAY,YAAY;AAAA,EACtB,SAAS,UAAU;AACrB;AAEA,YAAY,eAAe;AAAA,EACzB,SAAS;AACX;AAEA,IAAO,uBAAQ;",
-  "names": []
-}
